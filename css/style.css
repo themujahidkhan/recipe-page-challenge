@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --headingFont: "Playfair Display", serif;
+  --bodyFont: "Poppins", sans-serif;
+  --ingredientsFont: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: var(--bodyFont);
+}
+
+.container {
+  margin: 3rem 6rem;
+}
+
+.recipeTitle {
+  font-family: var(--headingFont);
+  font-size: 3rem;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 1rem auto;
+}
+
+.subtitleDesc {
+  margin: 0 1rem;
+  width: 50%;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #4f4f4f;
+}
+
+.sixDots {
+  margin: 0.5rem 0;
+}
+
+.recipeImg img {
+  margin: 2rem 0;
+  width: 75%;
+}
+
+.ingredientRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  font-family: var(--ingredientsFont);
+}
+
+.checklist {
+  width: 1rem;
+  height: 1.2rem;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+
+.ingredientSection {
+  margin: 2rem 0;
+}
+
+.dish {
+  margin: 2rem 0;
+  font-family: var(--headingFont);
+  font-size: 1.125rem;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.suggestion {
+  font-style: italic;
+  width: 50%;
+}
+
+.twoColumns {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+}
+
+.menuTitle {
+  font-size: 0.625rem;
+  font-family: var(--ingredientsFont);
+  color: #bdbdbd;
+}
+.menuDesc {
+  font-size: 0.875rem;
+}
+
+.fa-solid {
+  font-size: 1.5rem;
+}
+.fa-regular {
+  font-size: 1.5rem;
+}
+
+.instructions {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.instructionNumber {
+  background-color: #f2994a;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-family: var(--headingFont);
+  font-size: 1.5rem;
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  color: #828282;
+}
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Table Media Queries */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .container {
+    margin: 3rem 3rem;
+  }
+  .recipeTitle {
+    font-size: 1.5rem;
+  }
+  .subtitle {
+    display: flex;
+  }
+  .subtitleDesc {
+    font-size: 0.75rem;
+  }
+  .footer {
+    text-align: center;
+    color: #828282;
+  }
+  .footer a {
+    text-decoration: none;
+    color: black;
+  }
+}
+/* Media Queries For Mobile */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .container {
+    margin: 1.5rem;
+  }
+  .recipeTitle {
+    font-size: 1.5rem;
+  }
+  .subtitleDesc {
+    font-size: 0.75rem;
+    width: 100%;
+  }
+  .recipeImg img {
+    margin: 2rem 0;
+    width: 100%;
+  }
+  .twoColumns {
+    display: block;
+  }
+  .rhs {
+    margin: 3rem 0;
+    display: block;
+  }
+  .dish {
+    font-size: 1.125rem;
+  }
+  .ingredientRow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 0.875rem;
+  }
+  .instructions {
+    margin: 2rem 0;
+  }
+  .instructionNumber {
+    font-size: 0.875rem;
+  }
+  p {
+    font-size: 0.875rem;
+    width: 100%;
+  }
+  .suggestion {
+    font-size: 0.875rem;
+    width: 100%;
+  }
+  .footer {
+    text-align: center;
+    color: #828282;
+  }
+  .footer a {
+    text-decoration: none;
+    color: black;
+  }
+}
